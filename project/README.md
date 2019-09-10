@@ -34,3 +34,8 @@ axios  二次封装: React.Component.prototype.$axios=axios
 
 路由
 react-redux
+
+#### 任务分工
+1.主程：搭建项目的整体框架 以及配置
+2.路人甲：配置路由
+3.路人乙：写登录首页
