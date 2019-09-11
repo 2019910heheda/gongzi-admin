@@ -12,13 +12,15 @@ asset: 资源目录
 less
 npm install less less-loader
 默认不支持 less  需要在所有的webpack.config.js   把所有的sass--》less
-
+注意：本项目的less 版本和antd的版本保持一致  2.7.3
 #### Ui框架
 antd  less
 npm install antd
 全局引入（开发过程中）
     在index.js  import '/antd/dist/antd.css'
-按需引入（线上环境）
+按需引入（线上环境）npm install babel-plugin-import
+webpack.config.js    babel-loader
+ ['import',{'libraryName':'antd','style':true}],
 
 #### 基本配置
 起别名:webpack.config.js  alias
